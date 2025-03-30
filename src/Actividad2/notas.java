@@ -85,7 +85,7 @@ public class notas {
      * Calcula las notas acumuladas aplicando los porcentajes de ponderación
      * y obtiene la nota definitiva del estudiante.
      */
-    public void Calculonotas() {
+    public void CalcularNotas() {
         acu1 = uf1 * 0.35;
         acu2 = uf2 * 0.35;
         acu3 = uf3 * 0.30;
@@ -139,7 +139,7 @@ public class notas {
         notas fc = new notas();
         fc.IngresarNotas();
         fc.comprobarcion();
-        fc.Calculonotas();
+        fc.CalcularNotas();
         fc.Mostrar();
         fc.aprobado();
     }
