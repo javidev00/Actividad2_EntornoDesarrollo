@@ -21,13 +21,13 @@ import java.util.Scanner;
 public class notas {
 
     /** Nota correspondiente a la Unidad Formativa 1 */
-    private double unidadFormativa1;
+    private double uf1;
 
     /** Nota correspondiente a la Unidad Formativa 2*/
-    private double unidadFormativa2;
+    private double uf2;
 
     /** Nota correspondiente a la Unidad Formativa 3*/
-    private double unidadFormativa3;
+    private double uf3;
 
     /** Acumulado ponderado de la UF1 (35%) */
     private double acu1;
@@ -47,7 +47,7 @@ public class notas {
     /**
      * Solicita al usuario que introduzca las notas correspondientes a las tres unidades formativas.
      */
-    public void IngresaNotas() {
+    public void IngresarNotas() {
         System.out.println("Ingrese las notas del estudiante:");
         System.out.print("Ingrese nota 1: ");
         uf1 = entrada.nextDouble();
@@ -137,7 +137,7 @@ public class notas {
      */
     public static void main(String[] args) {
         notas fc = new notas();
-        fc.IngresaNotas();
+        fc.IngresarNotas();
         fc.comprobarcion();
         fc.Calculonotas();
         fc.Mostrar();
